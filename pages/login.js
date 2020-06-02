@@ -6,16 +6,15 @@ import FooterSmall from "../components/FooterSmall.js";
 export default function Login() {
   return (
     <>
-      <Navbar transparent />
+      {/* <Navbar transparent /> */}
       <main>
         <section className="absolute w-full h-full">
           <div
             className="absolute top-0 w-full h-full bg-gray-900"
             style={{
-              backgroundImage:
-                "url(" + ("/assets/img/register_bg_2.png") + ")",
+              backgroundImage: "url(" + "/assets/img/register_bg_2.png" + ")",
               backgroundSize: "100%",
-              backgroundRepeat: "no-repeat"
+              backgroundRepeat: "no-repeat",
             }}
           ></div>
           <div className="container mx-auto px-4 h-full">
@@ -37,7 +36,7 @@ export default function Login() {
                         <img
                           alt="..."
                           className="w-5 mr-1"
-                          src={("/assets/img/github.svg")}
+                          src={"/assets/img/github.svg"}
                         />
                         Github
                       </button>
@@ -49,7 +48,7 @@ export default function Login() {
                         <img
                           alt="..."
                           className="w-5 mr-1"
-                          src={("/assets/img/google.svg")}
+                          src={"/assets/img/google.svg"}
                         />
                         Google
                       </button>
@@ -120,7 +119,7 @@ export default function Login() {
                   <div className="w-1/2">
                     <a
                       href="#pablo"
-                      onClick={e => e.preventDefault()}
+                      onClick={(e) => e.preventDefault()}
                       className="text-gray-300"
                     >
                       <small>Forgot password?</small>
@@ -129,7 +128,7 @@ export default function Login() {
                   <div className="w-1/2 text-right">
                     <a
                       href="#pablo"
-                      onClick={e => e.preventDefault()}
+                      onClick={(e) => e.preventDefault()}
                       className="text-gray-300"
                     >
                       <small>Create new account</small>
@@ -139,7 +138,7 @@ export default function Login() {
               </div>
             </div>
           </div>
-          <FooterSmall absolute />
+          {/* <FooterSmall absolute /> */}
         </section>
       </main>
     </>
